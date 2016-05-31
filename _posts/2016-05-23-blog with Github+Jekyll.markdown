@@ -1,8 +1,7 @@
 ---
 layout:     post
-<<<<<<< HEAD
-title:      "jekyll+github+markdown搭载个人博客(未完待续)"
-subtitle:   "jekyll+github+markdown搭载个人博客"
+title:      "jekyll+github搭载个人博客(未完待续)"
+subtitle:   "jekyll+github搭载个人博客"
 date:       2016-05-23 12:00:00
 author:     "iMaple"
 header-img: "img/post-bg-re-vs-ng2.jpg"
@@ -82,8 +81,6 @@ e、测试是否创建成功
 
 `Hi imaple! You've successfully authenticated, but GitHub does not provide shell access.`
 
-
-<<<<<<< HEAD
 #### 2.2 jekyll环境搭建
 
 ##### 2.2.0 jekyll 简介及相关
@@ -98,7 +95,6 @@ ruby dk.rb install
 `
 等待安装完成之后，运行 `ruby -v` 若可现实ruby对应的版本号即表明安装成功.
 
-<<<<<<< HEAD
 ##### 2.2.1 更换GEM的source镜像
 
 问：gem是什么鬼？？？
@@ -135,11 +131,25 @@ gem install liquid //有用。。。
 – 山东理工大学：http://ruby.sdutlinux.org/
 – 淘宝网：http://ruby.taobao.org/
 
+##### 2.2.3 
+
+#### 3.1 本地环境搭建
+
+##### 3.1.0
+
+##### 3.1.1 代码上传至github博客库
+
+写完博客之后，依次执行以下代码
+
+`$ git add . `（把修改的文件添加到暂存区）
+
+`$ git commit -m "这里是对本次修改的备注信息"`（提交前对修改的内容做备注）
+
+`$ git push origin gh-pages`（把暂存区内的修改提交到gh-pages分支上）
+
 
 ***
 
-
-<<<<<<< HEAD
 #### 文章参考
 
 1、黄玄的博客模板 -> [猛戳这里](https://github.com/Huxpro/huxpro.github.io/blob/master/README.zh.md)
