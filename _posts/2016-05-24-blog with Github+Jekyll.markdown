@@ -2,7 +2,7 @@
 layout:     post
 title:      "jekyll+github搭载个人博客(未完待续)"
 subtitle:   "jekyll+github搭载个人博客"
-date:       2016-05-23 12:00:00
+date:       2016-05-24 12:00:00
 author:     "iMaple"
 header-img: "img/post-bg-re-vs-ng2.jpg"
 header-mask: 0.3
