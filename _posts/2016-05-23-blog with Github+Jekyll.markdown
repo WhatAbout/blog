@@ -152,6 +152,9 @@ gem install liquid //有用。。。
 
 #### 文章参考
 
+
 1、黄玄的博客模板 -> [猛戳这里](https://github.com/Huxpro/huxpro.github.io/blob/master/README.zh.md)
 
 2、采用Jekyll + github + pygments构建个人博客的最终说明 ->[猛戳这里](http://www.jianshu.com/p/609e1197754c)
+
+test
