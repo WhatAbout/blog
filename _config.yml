@@ -2,9 +2,9 @@
 title: Imaple Blog
 SEOTitle: 小林的博客 | Imaple Blog
 header-img: img/home-bg.jpg
-email: 764915052@qq.com
+email: linjianwei@imaple.net
 description: "关于前端 | 林鉴伟， 爱生活，爱前端"
-keyword: "林鉴伟 前端开发 移动端 个人博客"
+keyword: "林鉴伟 前端开发 移动端 个人博客 刘美峰 maple 刘美峰的男朋友"
 url: "http://imaple.net"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -61,16 +61,16 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+ba_track_id: c8de8f7b56de40a8ca3163a5d57ac993
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: imaple.net
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: imaple.net
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "天下无不散之宴席，除非你还没吃饱？"
+sidebar-about-description: "爱生活，爱前端"
 sidebar-avatar: /img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -84,7 +84,11 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
+        title: "蓝飞技术部落格",
+        href: "http://www.clanfei.com/"
+    }，
+    {
+        title: "卢世尧",
+        href: "http://iceyao.sinaapp.com/"
     }
 ]
