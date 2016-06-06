@@ -1,0 +1,14 @@
+---
+layout:     post
+title:      "test"
+subtitle:   "test"
+date:       2016-05-30 23:30:00
+author:     "iMaple"
+header-img: "img/post-bg-re-vs-ng2.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+    - 段子
+---
+
+test
