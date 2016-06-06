@@ -2,7 +2,7 @@
 layout:     post
 title:      "套路题のprototype"
 subtitle:   "prototype"
-date:       2016-06-07 03:09:30
+date:       2016-06-06 03:09:30
 author:     "iMaple"
 header-img: "img/post-bg-re-vs-ng2.jpg"
 header-mask: 0.3
