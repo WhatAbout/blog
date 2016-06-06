@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "套路题の==与==="
+title:      "套路题之==与==="
 subtitle:   "==与==="
 date:       2016-06-07 03:10:30
 author:     "iMaple"

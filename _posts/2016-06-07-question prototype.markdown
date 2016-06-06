@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "套路题のprototype"
+title:      "套路题之prototype"
 subtitle:   "prototype"
 date:       2016-06-07 03:09:30
 author:     "iMaple"
