@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      "套路题のprototype"
 subtitle:   "prototype"
