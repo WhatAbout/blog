@@ -1,0 +1,78 @@
+---
+layout:     post
+title:      "套路题のprototype"
+subtitle:   "prototype"
+date:       2016-06-07 03:09:30
+author:     "iMaple"
+header-img: "img/post-bg-re-vs-ng2.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+    - prototype
+    - 套路题
+---
+
+>首先prototype作为最常见的面（tao）试（lu）题经常会出现在我们前端面试或者笔试题中，如果掌握不扎实（像我），往往会吃不少亏，因此这里要把跳过的坑还原并记录一下，好让下次不再跳进去。
+
+准备好了么？？？好的，请听题：
+
+##### 套路1：
+
+```
+function foo(){
+	this.a = 0;
+	this.b = function(){
+		alert(this.a); // 弹窗1
+	}
+}
+foo.prototype={
+	b : function(){
+		this.a = 10;
+		alert(this.a);// 弹窗2
+	}
+}
+var f = new foo();
+alert(f.a); // 弹窗3
+f.b();// 弹窗4
+// 请输出弹窗的内容
+```
+
+经过一段思考过后，此时你内心肯定会有这样的疑问：为什么你prototype后面的=号前后不空空格？？？（气死你们这些强迫症，2333333。）
+好了言归正传，答案是： 0（来自弹窗3）跟 0（来自弹窗1）。
+
+为什么？？？为什么你不问为什么？？？（啪啪，好吧，我自己打脸）
+
+或者换成如下套路可能你就明白了
+
+```
+function foo(){
+	this.a = 0;
+    // 对象方法
+	this.b = function(){
+		alert(this.a); // 弹窗1
+	}
+}
+// 类方法
+foo.c = function(){ //注意，这里是跟上面的代码的主要区别
+        this.a = 5;
+        alert(this.a); // 弹窗2
+}
+// 原型方法
+foo.prototype={
+	d : function(){ //注意，这里是跟上面的代码的主要区别
+		this.a = 10;
+		alert(this.a);// 弹窗3
+	}
+}
+var f = new foo();
+alert(f.a); // 弹窗4
+f.b();
+foo.c(); // f.c();会报错，因为c这个类方法是foo对象的
+f.d();
+// 请输出弹窗的内容
+```
+
+是这样的，方法b属于foo对象的对象方法，而方法c则是属于foo对象的类方法，d才是foo对象的原型方法，当调用对象的某个方法时，函数会首先去对象本体中查找该方法，如果找不到则再去prototype原型中找该方法，即同名的原型方法不会覆盖对象本身的对象方法。而方法c又是foo对象独有的类方法，与实例化后的f对象无关，因此同名的类方法也不会覆盖到对象方法，所以执行f.c()方法会报错。
+
+##### 套路2：
+待续。。。

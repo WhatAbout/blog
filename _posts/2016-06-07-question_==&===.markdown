@@ -1,0 +1,45 @@
+---
+layout:     post
+title:      "套路题の==与==="
+subtitle:   "==与==="
+date:       2016-06-07 03:10:30
+author:     "iMaple"
+header-img: "img/post-bg-re-vs-ng2.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+    - ==与===
+    - 套路题
+---
+
+>同样的，== 与 === 作为最常见的面（tao）试（lu）题之一，也是经常会出现在我们前端面试或者笔试题中，如果掌握不扎实（像我），往往会吃不少亏，因此这里要把跳过的坑还原并记录一下，好让下次不再跳进去。（怎么还是这台词。。。）
+
+废话少说，看剑！
+
+```
+alert(0 == false)
+alert(0 === false)
+alert([0] == false)
+alert([0] === false)
+alert([] == false)
+alert([] === false)
+alert('false' == false)
+alert('false' === false)
+// 请依次输出上面弹出的值
+```
+
+我次奥，一来就要互相伤害吗？
+好的我先给出答案，再做解释
+
+```
+true
+false
+true
+false
+true
+false
+false
+false
+```
+
+我次奥，三点了，我要去洗衣服了，下次再解释吧。。。
