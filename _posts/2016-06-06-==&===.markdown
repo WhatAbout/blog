@@ -25,6 +25,8 @@ alert([] == false)
 alert([] === false)
 alert('false' == false)
 alert('false' === false)
+alert(NaN == NaN)
+alert(NaN === NaN)
 // 请依次输出上面弹出的值
 ```
 
@@ -40,6 +42,11 @@ true
 false
 false
 false
+false
+false
 ```
 
-我次奥，三点了，我要去洗衣服了，下次再解释吧。。。
+== 和 != 比较若类型不同，先偿试转换类型，再作值比较，最后返回值比较结果 。
+而 
+=== 和 !== 只有在相同类型下,才会比较其值
+NaN 是个奇葩，它跟任何值（包括本身）都不会相等
