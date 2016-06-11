@@ -1,0 +1,71 @@
+---
+layout:     post
+title:      "套路题の正则表达式"
+subtitle:   "正则"
+date:       2016-06-08 13:20:30
+author:     "iMaple"
+header-img: "img/post-bg-re-vs-ng2.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+    - 套路题
+---
+
+##### 定义：
+
+正则定义的方式有两种：
+
+```
+var re = new RegExp("a","gi");//匹配所有的a或A  
+```
+
+和
+
+```
+var re = /a/gi; //匹配所有的a或A  
+```
+
+附：
+
+- g （全文查找） 
+- i （忽略大小写） 
+- m （多行查找） 
+
+##### 方法：
+
+exec、match、test
+
+举例：
+
+```
+var reg1 = new RegExp("abc") ; 
+var reg2 = new RegExp("abc","g");
+var str = "3abc4,5abc6";
+alert(reg1.exec(str)); // ['abc']
+alert(reg2.exec(str)); // ['abc']
+alert(str.match(reg1));// ['abc']
+alert(str.match(reg2));// ['abc', 'abc']
+alert(reg1.test(str)); // true
+```
+
+结论：
+在没有子表达式的情况，exec不管是否有全局标示，只会匹配到第一个符合正则的字符串，并以数组形式返回，匹配不到则返回null。match则会受全局标示影响，返回对应匹配的数组。test则是返回boolean值。
+
+**特殊字符**
+
+`[ ]`  范围描述符。[a-z]表示从a到z之间的任意一个。
+`\w`  英文字母和数字。即[0-9 A-Z a-z]。
+`\W`  非英文字母和数字
+`\s`  空字符，即[\t\n\r\f]。
+`\S`  非空字符。
+`\d`  数字，即[0-9]。
+`\D`  非数字。
+`\b`  词边界字符（在范围描述符外部时）
+`\B`  非词边界字符
+`\b`  退格符（0x08）（在范围描述符内部时）
+`*`  前面元素出现0次以上
+`+`  前面元素出现1次以上
+`{m,n}`  前面元素最少出现m次,最多出现n次
+`?`  前面元素出现0次或1次
+`|`  选择
+`( )`  群组  其他字符  该字符本身
