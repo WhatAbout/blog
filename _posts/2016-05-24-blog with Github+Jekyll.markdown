@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "jekyll+github搭载个人博客(未完待续)"
+title:      "jekyll+github搭载个人博客"
 subtitle:   "jekyll+github搭载个人博客"
 date:       2016-05-24 12:00:00
 author:     "iMaple"
